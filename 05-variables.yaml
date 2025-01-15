@@ -3,5 +3,5 @@
   connection: local
   tasks:
   - name: print the variable
-    anisble.builtin.debug:
+    ansible.builtin.debug:
       msg: "hello course is devops with aws,duration is 120hrs,trainer is siva kumar reddy"
