@@ -1,0 +1,15 @@
+- name: play1
+  hosts: local
+  connection: local #it manges its own credentials
+  tasks:
+  - name: play1 and task1
+    ansible.builtin.debug:
+      msg: "hello play1 from task 1"
+
+- name: play2
+  hosts: local
+  connection: local
+  tasks:
+  - name: play2 and task1
+    ansible.builtin.debug:
+      msg: "hello play2 from task1"
