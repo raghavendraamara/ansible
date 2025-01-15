@@ -4,12 +4,13 @@
   vars_prompt:
   - name: COURSE
     prompt: enter your course
+    private: false
   - name: DURATION
     prompt: enter duration of the course
   - name: TRAINER
     prompt: enter your trainer name
+    private: false
   tasks:
   - name: course information is
     ansible.builtin.debug:
       msg: "course is {{ COURSE }},duration of couse is {{ DURATION }},trainer name is {{ TRAINER }}"
-        
