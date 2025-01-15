@@ -1,0 +1,19 @@
+- name: variables task
+  hosts: local
+  connection: local
+  vars:
+   COURSE: "DEVOPS WITH AWS"
+   DURATION: 120HRS
+   TRAINER: SIVA KUMAR REDDY
+  tasks:
+  - name: local variables
+    vars: 
+     COURSE: ANSIBLE
+     DURATION: 15HRS
+    ansible.builtin.debug:
+      msg: "course is {{ COURSE }},duration of the couse is {{ DURATION }},trainer is {{ TRAINER}}"
+  
+  - name: global variables
+    ansible.builtin.debug:
+     msg: "course is {{ COURSE }},duration of the couse is {{ DURATION }},trainer is {{ TRAINER}}"
+    
