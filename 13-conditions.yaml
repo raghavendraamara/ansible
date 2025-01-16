@@ -7,6 +7,5 @@
       msg: "given number {{ mynum }} is greaterthan 10"
     when: mynum > 10
   - name: checking lessthan or equal
-    ansible.builtin.deburg:
+    ansible.builtin.debug:
       msg: "given number {{ mynum }} is lessthan or equal to 10"
-          
