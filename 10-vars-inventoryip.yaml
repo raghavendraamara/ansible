@@ -2,6 +2,5 @@
   hosts: web
   tasks:
   - name: getting variables from inventory ip addresses
-    ansible.buidin.debug:
+    ansible.builtin.debug:
       msg: "course is {{ COURSE }},DURATION IS {{ DURATION }}, TRAINER IS {{ TRAINER }}"
-      
