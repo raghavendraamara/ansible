@@ -1,6 +1,8 @@
 - name: checking number gretaer or not than 10
   hosts: local
   connection: local
+  vars:
+    mynum: 20
   tasks:
   - name: checking greater 
     ansible.builtin.debug:
