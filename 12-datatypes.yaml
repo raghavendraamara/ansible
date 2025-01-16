@@ -2,17 +2,17 @@
   hosts: local
   connection: local
   vars:
-    course: "devops with aws"
-    duration: 120
-    topics:
+    course: "devops with aws" # sting datatype
+    duration: 120 # number datatype
+    topics: # list data type {}
     - linux
     - shell
     - cloud
-    tools:
+    tools: # mapping or map []
      ci: jenkins
      cloud: aws
      container: docker
-    live: yes
+    live: yes  # boolean
   tasks:
   - name: course details
     ansible.builtin.debug:
