@@ -1,6 +1,6 @@
 - name: variables from server ip
   hosts: web
-  connection: local
+  # connection: local
   tasks:
   - name: getting variables from inventory ip addresses
     ansible.builtin.debug:
