@@ -13,7 +13,7 @@
      cloud: aws
      container: docker
     live: yes
-    tasks:
-    - name: course details
-      ansible.builtin.deburg:
-        msg: "name of the course is {{ course }},duration in hours {{ duration }},topics covered are {{ topics }},is class live {{ live }},tools used are {{ tools }}"
+  tasks:
+  - name: course details
+    ansible.builtin.deburg:
+      msg: "name of the course is {{ course }},duration in hours {{ duration }},topics covered are {{ topics }},is class live {{ live }},tools used are {{ tools }}"
