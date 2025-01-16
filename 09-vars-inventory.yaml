@@ -5,5 +5,5 @@
   - name: getting variables from inventory
     ansible.builtin.debug:
       msg: "course is {{ COURSE }},duration of the course is {{ DURATION }}, 
-      Trainer is {{ TRAINER }}"
+            Trainer is {{ TRAINER }}"
   
