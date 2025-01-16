@@ -15,5 +15,5 @@
     live: yes
   tasks:
   - name: course details
-    ansible.builtin.deburg:
+    ansible.builtin.debug:
       msg: "name of the course is {{ course }},duration in hours {{ duration }},topics covered are {{ topics }},is class live {{ live }},tools used are {{ tools }}"
